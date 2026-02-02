@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="shortcut icon" href="img/logodj.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../img/logodj.png" type="image/x-icon">
+    </head>
+    <body>
+        <img src="../img/logodj.png" alt="" id="logo">
+        <div class="container">
+            <div class="card">
+                <h1>Iniciar sesión</h1>
+                <p class="lead">Accede a tu cuenta.</p>
+                <form action="#" method="post" aria-label="formulario de inicio de sesión">
+                    <div>
+                        <label for="login-email">Correo electrónico</label>
+                        <input id="login-email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+                    </div>
+                    <div>
+                        <label for="login-password">Contraseña</label>
+                        <input id="login-password" name="password" type="password" placeholder="••••••••" required />
+                    </div>
+                    <div class="actions">
+                        <button type="submit" class="primary"><a href="../INICIO/inicio.html">Entrar</a></button>
+                    </div><br>
+                </form>
+            </div>
+
+            <div class="card" id="tab-register">
+                <div class="center-col">
+                    <h1>Crear cuenta</h1>
+                    <p class="lead">Regístrate para empezar a usar la aplicación.</p>
+                </div>
+                <form action="#" method="post" aria-label="formulario de registro">
+                    <div>
+                        <label for="reg-name">Nombre completo</label>
+                        <input id="reg-name" name="name" type="text" placeholder="Tu nombre" required />
+                    </div>
+                    <div>
+                        <label for="reg-email">Correo electrónico</label>
+                        <input id="reg-email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+                    </div>
+                    <div>
+                        <label for="reg-password">Contraseña</label>
+                        <input id="reg-password" name="password" type="password" placeholder="Crea una contraseña" required />
+                    </div>
+                    <div>
+                        <label for="reg-password-confirm">Confirmar contraseña</label>
+                        <input id="reg-password-confirm" name="password_confirm" type="password" placeholder="Confirma tu contraseña" required />
+                    </div>
+                    <div class="actions">
+                        <button type="submit" class="primary">Crear cuenta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

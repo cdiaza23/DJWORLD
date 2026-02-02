@@ -1,0 +1,185 @@
+/*ESTILO GENERAL*/
+    :root{
+        --bg:#111111;
+        --card:#292929;
+        --primary:#3cff00;
+        --muted:rgba(7,252,40,0.7);
+        --text:#07fc27;
+    }
+
+    *{
+        box-sizing:border-box;
+        /*border: 1px solid red;*/
+    }
+    hr{
+        border: #07fc27 0.1px solid;
+    }
+
+    body{
+        margin:0;
+        font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background-image: url(../img/fondovinilo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color:var(--text);
+        text-align: center;
+    }
+    img{
+        width:70px;
+        height:70px
+    }
+    .inicio{
+        max-width:75%;
+        margin:0 auto
+    }
+    header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
+        padding:10px 0
+    }
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:10px
+    }
+    .perfil{
+        display: flex;
+        align-items: center;
+    }
+    .perfil a{
+        color:var(--muted);
+        text-decoration:none;
+        margin-left:12px;
+        font-size:15px;
+        font-weight: bold;
+    }
+    nav{display:flex;align-items:center;gap:12px}
+    nav a{
+        color:var(--text);
+        text-decoration:none;
+        margin-left:12px;
+        font-size:15px;
+        font-weight: bold;
+    }
+    .caja{
+        background:rgba(66, 66, 66, 0.445);
+        padding:18px;
+        border-radius:12px;
+        text-align:center
+    }
+    .caja h3{
+        font-size:16px;
+        font-weight: bold;
+    }
+    .menurapido .caja{
+      box-shadow:0 6px 22px var(--primary);
+      border: 1px solid white;
+    }
+    .menurapido .caja p{
+        background-color: #2929299d;
+        border-radius: 10px;
+        margin-top:0 ;
+        padding:10px;
+        color: var(--text);
+        width: max-content;
+        margin: 0 auto;
+    }
+    .menurapido .caja h3{
+        background-color: #2929299d;
+        border-radius: 20px 20px 0px 0px;
+        text-align: center;
+        width:max-content;
+        margin:0 auto;
+        padding:14px;
+        color: var(--text);
+    }
+    footer{
+        margin-top:32px;
+        padding:18px;
+        color:var(--muted);
+        align-items:center;
+        background-color: var(--bg);
+        bottom: 0;
+        text-align: center;
+        position: sticky;
+        width: 100%;
+    }
+    .menurapido{
+        margin-top: 15px;
+        padding-bottom: 15px;
+        transition: all 0.3s ease;
+    }
+    .menurapido:hover{
+      cursor: pointer;
+      scale: 105%;
+      transform: translateY(-5px);
+      filter: brightness(1.1);
+    }
+    a:hover{
+        scale: 120%;
+    }
+    a{
+        text-decoration: none;
+        color: var(--text);
+    }
+    /*ELIGE*/
+    .elige{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .elige a{
+        transition: all 0.3s ease;
+
+    }
+    .elige a:hover{
+      cursor: pointer;
+      scale: 105%;
+      transform: translateY(-5px);
+      filter: brightness(1.1);
+    }
+    .compra{
+        background-image: url(../img/fondocompra.png);
+        background-position: bottom;
+        background-size: cover;
+        padding: 20px;
+        border-radius: 15px;
+        width: 700px;
+        height: 220px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        color: white;
+    }
+    .compra h3{
+        margin-top: 0;
+    }
+    .descarga{
+        background-image: url(../img/fondomusica.png);
+        background-position: bottom;
+        background-size: cover;
+        padding: 20px;
+        border-radius: 15px;
+        width: 700px;
+        height: 220px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        color: white;
+    }
+    .descarga h3{
+        margin-top: 0;
+    }
+    .genero{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .genero p{
+        background-color: #2929299d;
+        border-radius: 10px;
+        font-weight: bold;
+        width: max-content;
+        padding: 8px;
+    }
